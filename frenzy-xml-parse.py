@@ -64,7 +64,7 @@ j=0
 #prints the title of your report along with some details of the campaign
 #at the top of the page. You can customize with your team's name
 pdf.set_font("Arial", 'B', size=19)
-pdf.cell(190,9,'600 Cyber Protection Team', 0,1,'C')
+pdf.cell(190,9,'Your Organization Name', 0,1,'C')
 pdf.cell(190,9,'Phishing Campaign Results', 0,1,'C')
 pdf.set_font("Arial", 'B', size=12)
 pdf.cell(190,5,'',0,1,'L')
@@ -132,6 +132,7 @@ for node in tree.findall(".//victim"):
             pdf.cell(190,5,"User-Agent: {browse}".format(browse=browse),0,1,'L')
             pdf.cell(190,5,"Clicked Date: {updated}".format(updated=updated),0,1,'L')
             pdf.cell(190,5,'',0,1,'L')
-            #print "Name:\t\t{first} {last} \nEmail Address:\t{email} \nIP Address:\t{ip} \nUser-Agent:\t{browse} \nClick Date:\t{updated}\n".format(first=first, last=last, email=email, ip=ip, browse=browse, updated=updated)
+
+#outputs your results in a nice tidy PDF in the same directory you ran the script from
 pdf.output(options.source_file + "_results.pdf")
 print "\n[+] Script complete, file: " + options.source_file + "_results.pdf has been produced"
