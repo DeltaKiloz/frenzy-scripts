@@ -2,7 +2,7 @@
 
 ###############################################################################################################
 ## [Title]: frenzy-xml-parse.py -- a script to parse the xml report from Phishing Frenzy
-## [Author]: Brandon Demers-Keller (delta_kiloz) -- @delta_kiloz
+## [Author]: Brandon Demers-Keller (DeltaKiloz) -- @delta_kiloz
 ##-------------------------------------------------------------------------------------------------------------
 ## [Details]:
 ## This script is intended to be run against the .XML report that is generated from the Phishing Frenzy applcation
@@ -47,7 +47,7 @@ if options.source_file == None:
 #Checks to see if input file exists, if not print error
 if options.source_file == True:
     if not os.path.exists(options.source_file):
-        print "[+] Error, Source .XML file does not exist. Please check your input below:"
+        print "\n[+] Error, Source .XML file does not exist. Please check your input below:\n"
         print options.source_file
         sys.exit(2)
 
