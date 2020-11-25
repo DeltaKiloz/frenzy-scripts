@@ -2,7 +2,7 @@
 
 ###############################################################################################################
 ## [Title]: frenzy-xml-parse.py -- a script to parse the xml report from Phishing Frenzy
-## [Author]: Brandon Demers-Keller (DeltaKiloz) -- @delta_kiloz
+## [Author]: @delta_kiloz
 ##-------------------------------------------------------------------------------------------------------------
 ## [Details]:
 ## This script is intended to be run against the .XML report that is generated from the Phishing Frenzy applcation
